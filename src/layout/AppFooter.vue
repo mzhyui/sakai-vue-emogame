@@ -1,8 +1,22 @@
-<script setup></script>
-
 <template>
     <div class="layout-footer">
-        SAKAI by
-        <a href="https://primevue.org" target="_blank" rel="noopener noreferrer" class="text-primary font-bold hover:underline">PrimeVue</a>
+        <span>EmoGame · 皮肤价值与销售证据工作台</span>
+        <span class="footer-separator">·</span>
+        <span class="footer-muted">Vue 3 + PrimeVue / Sakai</span>
     </div>
 </template>
+
+<style scoped>
+.footer-muted {
+    color: var(--p-text-muted-color);
+}
+@media (max-width: 640px) {
+    .layout-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-separator {
+        display: none;
+    }
+}
+</style>
